@@ -7,7 +7,7 @@ require('dotenv').config();
 const contactRoutes = require('./routes/contact');
 
 const app = express();
-const PORT = process.env.PORT || 31; // Changed from 5000 to 31
+const PORT = process.env.PORT || 5035; // Changed from 31 to 5035
 
 // Security middleware
 app.use(helmet({
@@ -28,7 +28,8 @@ const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:5173',
   'http://localhost:5000',
-  'http://localhost:31', // Added localhost:31
+  'http://localhost:31',
+  'http://localhost:5035', // Added localhost:5035
   'https://mandkeskills.com',
   process.env.CLIENT_URL,
 ].filter(Boolean); // Remove undefined values
