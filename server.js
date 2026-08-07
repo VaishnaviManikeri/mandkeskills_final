@@ -30,7 +30,8 @@ const allowedOrigins = [
   'http://localhost:5000',
   'http://localhost:31',
   'http://localhost:5035', // Added localhost:5035
-  'https://mandkeskills.com',
+"https://mandkeskills.com",
+    "https://www.mandkeskills.com",
   process.env.CLIENT_URL,
 ].filter(Boolean); // Remove undefined values
 
